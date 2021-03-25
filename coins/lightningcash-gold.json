@@ -1,0 +1,7 @@
+{
+    "name": "LightningCash-Gold",
+    "symbol": "LTNCG",
+    "algorithm": "yespowerLTNCG",
+    "blockTime": 5,
+    "txfee": 0.001
+}

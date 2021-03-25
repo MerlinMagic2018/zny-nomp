@@ -1,0 +1,61 @@
+{
+    "name": "zny-nomp",
+    "version": "0.0.4",
+    "description": "BitZeny (yescrypt) stratum mining pool based on NOMP",
+    "keywords": [
+        "stratum",
+        "mining",
+        "pool",
+        "server",
+        "poolserver",
+        "bitzeny",
+        "zny",
+        "yescrypt"
+    ],
+    "homepage": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp",
+    "bugs": {
+        "url": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp/issues"
+    },
+    "license": "MIT",
+    "author": "Joshua Yabut",
+    "contributors": [
+        "aayanl",
+        "sennevb",
+        "Matthew Little",
+        "vekexasia",
+        "TheSeven",
+        "Yoshuki43"
+    ],
+    "main": "init.js",
+    "bin": {
+        "block-notify": "./scripts/blockNotify.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp.git"
+    },
+    "dependencies": {
+        "async": "^2.6.3",
+        "bignum": "^0.13.0",
+        "body-parser": "^1.19.0",
+        "colors": "^1.4.0",
+        "compression": "^1.7.4",
+        "dateformat": "^2.2.0",
+        "dot": "^1.1.2",
+        "express": "^4.17.1",
+        "extend": "^3.0.2",
+        "mysql": "^2.17.1",
+        "node-json-minify": "^1.0.0",
+        "node-watch": "^0.5.9",
+        "nonce": "^1.0.4",
+        "redis": "^2.8.0",
+        "request": "^2.88.0",
+        "stratum-pool": "git+https://github.com/ROZ-MOFUMOFU-ME/node-stratum-pool-yescrypt-0.5.git"
+    },
+    "engines": {
+        "node": ">=0.10"
+    },
+    "scripts": {
+        "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node init.js"
+    }
+}

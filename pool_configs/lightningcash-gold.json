@@ -1,0 +1,86 @@
+{
+    "enabled": true,
+    "coin": "lightningcash-gold.json",
+
+    "address": "M8gnUxmnej6BEtHBMn4PQ1zRY1FpXYqiB9",
+
+    "rewardRecipients": {
+        "CSoc9vQ7pGhWMGUmdnv7HW4raZRZ5ewrgj": 1.0
+    },
+
+    "paymentProcessing": {
+	"minConf": 126,
+        "enabled": true,
+        "paymentMode": "prop",
+        "_comment_paymentMode":"prop, pplnt",
+        "paymentInterval": 600,
+        "minimumPayment": 0.1,
+        "maxBlocksPerPayment": 500,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 9110,
+            "user": "RPCUSER",
+            "password": "RPCPASSWORD"
+        }
+    },
+
+    "tlsOptions": {
+        "enabled": false,
+        "serverKey":"",
+        "serverCert":"",
+        "ca":""
+    },
+
+    "ports": {
+        "6666": {
+            "diff": 0.2,
+            "tls": false,
+            "varDiff": {
+                "minDiff": 0.00,
+                "maxDiff": 16,
+                "targetTime": 5,
+                "retargetTime": 30,
+                "variancePercent": 30
+            }
+        },
+        "7777": {
+            "diff": 0.5,
+            "tls": false,
+            "varDiff": {
+                "minDiff": 0.00,
+                "maxDiff": 16,
+                "targetTime": 5,
+                "retargetTime": 30,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9110,
+            "user": "RPCUSER",
+            "password": "RPCPASSWORD"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 9981,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "",
+        "password": "",
+        "database": "",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
