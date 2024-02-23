@@ -32,9 +32,9 @@
 
     "website": {
         "enabled": true,
-        "host": "8.9.11.39",
-        "port": 80,
-        "stratumHost": "pool.ltncg.com",
+        "host": "0.0.0.0",
+        "port": 3001,
+        "stratumHost": "pool.lightningcashr.org",
         "stats": {
             "updateInterval": 30,
             "historicalRetention": 14400,

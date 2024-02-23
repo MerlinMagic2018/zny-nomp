@@ -1,0 +1,7 @@
+{
+    "name": "LightningCash-R",
+    "symbol": "LNCR",
+    "algorithm": "yespowerLTNCG",
+    "blockTime": 10,
+    "txfee": 0.001
+}

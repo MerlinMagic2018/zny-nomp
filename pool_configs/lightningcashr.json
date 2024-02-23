@@ -1,11 +1,11 @@
 {
     "enabled": true,
-    "coin": "lightningcash-gold.json",
+    "coin": "lightningcashr.json",
 
-    "address": "M8gnUxmnej6BEtHBMn4PQ1zRY1FpXYqiB9",
+    "address": "CaRdzHWD6TPDcqPkyvs4ehtMcV9Pgtr6Td",
 
     "rewardRecipients": {
-        "CSoc9vQ7pGhWMGUmdnv7HW4raZRZ5ewrgj": 1.0
+//        "CSoc9vQ7pGhWMGUmdnv7HW4raZRZ5ewrgj": 1.0
     },
 
     "paymentProcessing": {
@@ -18,9 +18,9 @@
         "maxBlocksPerPayment": 500,
         "daemon": {
             "host": "127.0.0.1",
-            "port": 9110,
-            "user": "RPCUSER",
-            "password": "RPCPASSWORD"
+            "port": 9112,
+            "user": "antoine",
+            "password": "9174D2F9"
         }
     },
 
@@ -48,7 +48,7 @@
             "tls": false,
             "varDiff": {
                 "minDiff": 0.00,
-                "maxDiff": 16,
+                "maxDiff": 32,
                 "targetTime": 5,
                 "retargetTime": 30,
                 "variancePercent": 30
@@ -59,9 +59,9 @@
     "daemons": [
         {
             "host": "127.0.0.1",
-            "port": 9110,
-            "user": "RPCUSER",
-            "password": "RPCPASSWORD"
+            "port": 9112,
+            "user": "antoine",
+            "password": "9174D2F9"
         }
     ],
 
